@@ -25,25 +25,25 @@ main functions are:
 
 ### Main Functions
 
-- **`load_ocr_data(json_path)`**: This function loads the OCR data from
-  a JSON file, returning a dictionary with the content. It is useful
-  when the OCR results are stored in this format.
+- **`cargar_datos_ocr(ruta_json)`**: This function loads the OCR data
+  from a JSON file, returning a dictionary with the content. It is
+  useful when the OCR results are stored in this format.
 
-- **`extract_words(ocr_data)`**: Extracts the words and their
+- **`extraer_palabras(datos_ocr)`**: Extracts the words and their
   corresponding coordinates from the OCR data. It returns a list of
   dictionaries representing each word along with its position in the
   image (coordinates), allowing for correct ordering and processing of
   the words.
 
-- **`order_words(words, vertical_tolerance=6)`**: This function
+- **`ordenar_palabras(palabras, tolerancia_vertical=6)`**: This function
   organizes the extracted words into lines, taking into account their
   vertical and horizontal positions. This is useful for correctly
   reconstructing the text when the words are not in the appropriate
   order.
 
-- **`group_words_by_line(ordered_words, vertical_tolerance=6)`**: Groups
-  the words into coherent lines of text based on their position and
-  returns a list of ordered text lines.
+- **`agrupar_palabras_por_linea(palabras_ordenadas, tolerancia_vertical=6)`**:
+  Groups the words into coherent lines of text based on their position
+  and returns a list of ordered text lines.
 
 ### Example Usage
 
