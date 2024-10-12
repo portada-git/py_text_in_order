@@ -3,12 +3,6 @@
 
 ([Leer en inglés](README.md))
 
-Este repo proporciona un conjunto de funciones en Python para procesar
-datos de reconocimiento óptico de caracteres (OCR) generados por la API
-de DocumentAI y almacenados en archivos JSON. Permite extraer, ordenar y
-agrupar palabras y líneas, además de generar archivos de texto a partir
-de los datos OCR procesados con DocumentAI.
-
 En los datos obtenidos mediante OCR (Reconocimiento Óptico de
 Caracteres), es común encontrar que las palabras no están en el orden
 adecuado debido a errores en el procesamiento o a la estructura del
@@ -45,7 +39,7 @@ coherentes de texto. Las funciones principales son:
   Agrupa las palabras en líneas de texto coherentes, según su posición,
   y devuelve una lista de líneas de texto ordenadas.
 
-### Ejemplo de Uso
+### Example Usage
 
 ``` python
 directorio_entrada = './directorio_entrada'
